@@ -180,7 +180,9 @@ def main():
         except ValueError:
             pass
 
-        result.update({"stdout": response})
+        result.update(
+            {"stdout": response,}
+        )
 
     module.exit_json(**result)
 
